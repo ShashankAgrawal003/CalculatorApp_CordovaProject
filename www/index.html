@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>
+            Calculator
+        </title>
+    </head>
+        <style>
+            h1{
+                color:white;
+            }
+        </style>
+        <script>
+            function add(){
+                let a=parseInt(document.getElementById("id1").value);
+                let b=parseInt(document.getElementById("id2").value);
+                let z=a+b;
+                document.getElementById("p1").innerText=z;
+                }
+            function sub(){
+                let a=parseInt(document.getElementById("id1").value);
+                let b=parseInt(document.getElementById("id2").value);
+                let z=a-b;
+                document.getElementById("p1").innerText=z;
+                }
+            function multiply(){
+                let a=parseInt(document.getElementById("id1").value);
+                let b=parseInt(document.getElementById("id2").value);
+                let z=a*b;
+                document.getElementById("p1").innerText=z;
+                }
+            function divide(){
+                let a=parseInt(document.getElementById("id1").value);
+                let b=parseInt(document.getElementById("id2").value);
+                let z=a/b;
+                document.getElementById("p1").innerText=z;             
+                }
+        </script>
+        <body background="img/background1.jpg" align="center"> 
+        <br><br>
+        <h1>Calculator</h1>
+        
+        <p style="font-size: 30"><font style="color:white">Enter First Number</font>&nbsp;
+            <input id="id1" placeholder="Enter Number" type="text" style="height:25; width:300"></p>
+        
+        <p style="font-size: 30"><font style="color:white">Enter Second Number</font>&nbsp;
+            <input id="id2" placeholder="Enter Number" type="text" style="height:25; width:300"></p> <br>
+        <button onclick="add()">Add</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button onclick="sub()">Sub</button>&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <button onclick="multiply()">Multiply</button>&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <button onclick="divide()">Divide</button>
+        <br>
+        <p id="p1" style="font-size:30; color:white; font-weight: bold">Answer</p>
+        
+    </body>
+</html>
